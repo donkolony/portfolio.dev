@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolony Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/mediaquerries.css" />
+  </head>
+  <body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">D.K</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MOBILE NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">D.K</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------ PROFILE SECTION ------------------>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./public/image/profile-image.png"
+          alt="Dieudonne Kolony profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dieudonne Kolony</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <!-- Profile Buttons -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./public/cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href ='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- Profile Social Icons -->
+        <div id="social-container">
+          <img
+            src="./public/icon/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./public/icon/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+          <img
+            src="./public/icon/twitter.png"
+            alt="My Twitter profile"
+            class="icon"
+            onclick="location.href='https://twitter.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!------------------ ABOUT SECTION ------------------>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+    </section>
+
+    <!------------------ SKILLS SECTION ------------------>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Skills</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <!-- Article 1 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <!-- Article 2 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <!-- Article 3 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 4 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 5 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 6 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>UI/UX-Figma</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Details Container 2 -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <!-- Article 1 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 2 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 3 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- Article 4 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <!-- Article 5 -->
+              <article>
+                <img
+                  src="./public/icon/checkmark.png"
+                  alt="Experience icon"
+                  class="check-icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#portfolio'"
+      />
+    </section>
+
+    <!------------------ PORTFOLIO SECTION ------------------>
+    <section id="portfolio">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h2 class="title">Portfolio</h2>
+      <div class="portfolio-grid-container">
+        <!-- First Child -->
+        <div class="portfolio-details-container">
+          <img
+            src="./public/image/p-1.svg"
+            alt="Portfolio Project One"
+            class="portfolio-img"
+          />
+          <h2 class="portfolio-title">eCommerce</h2>
+          <div class="portfolio-btn-container">
+            <button class="portfolio-btn">GitHub</button>
+            <button class="portfolio-btn">Demo</button>
+          </div>
+        </div>
+        <!-- Second Child -->
+        <div class="portfolio-details-container">
+          <img
+            src="./public/image/p-1.svg"
+            alt="Portfolio Project Two"
+            class="portfolio-img"
+          />
+          <h2 class="portfolio-title">Portfolio</h2>
+          <div class="portfolio-btn-container">
+            <button class="portfolio-btn">GitHub</button>
+            <button class="portfolio-btn">Demo</button>
+          </div>
+        </div>
+        <div class="portfolio-details-container">
+          <img
+            src="./public/image/p-1.svg"
+            alt="Portfolio Project Three"
+            class="portfolio-img"
+          />
+          <h2 class="portfolio-title">Kolony Dev</h2>
+          <div class="portfolio-btn-container">
+            <button
+              class="portfolio-btn"
+              onclick="location.href='https://github.com/donkolony/kolony.dev.git'"
+            >
+              GitHub
+            </button>
+            <button
+              class="portfolio-btn"
+              onclick="location.href='https://donkolony.github.io/kolony.dev/'"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ARROW ICON FOR NAVIGATION -->
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Where To</p>
+      <h2 class="title">Contact Me</h2>
+    </section>
+
+    <!------------------ FOOTER SECTION ------------------>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="#about" onclick="location.href='/#about'">About</a>
+            </li>
+            <li>
+              <a href="#Skills" onclick="location.href='/#skills'">Skills</a>
+            </li>
+            <li>
+              <a href="#portdolio" onclick="location.href='/#portfolio'"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="location.href='/#contact'">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        &#169; 2025 All rights Reserved <br />Designed & Developed by Dieudonne
+        Kolony
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
