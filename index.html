@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolony Portfolio</title>
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="./public/icon/logo.jpg" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/mediaquerries.css" />
   </head>
@@ -15,7 +17,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,7 +34,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -42,7 +44,7 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./public/image/profile-image.png"
+          src="./public/image/profile.png"
           alt="Dieudonne Kolony profile picture"
         />
       </div>
@@ -90,6 +92,62 @@
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h2 class="title">About Me</h2>
+      <div class="about-container-flex">
+        <div class="about-img-container">
+          <img
+            src="./public/image/about2.png"
+            alt="About me image"
+            class="about-me"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-details-card-container">
+            <!-- First Child -->
+            <div class="about-details-card">
+              <img
+                src="./public/icon/experience.png"
+                alt="Experience icon"
+                class="about-icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                2+ years <br />
+                Frontend Development
+              </p>
+            </div>
+            <div class="about-details-card">
+              <img
+                src="./public/icon/experience.png"
+                alt="Experience icon"
+                class="about-icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                BTech Bachelors of Technology<br />
+                NDip National Diploma
+              </p>
+            </div>
+          </div>
+          <p class="about-text-container">
+            Hello, World! 👋 I'm Dieudonne Kolony, a self-taught full-stack web
+            developer transforming ideas into visually stunning, interactive
+            experiences. With a Civil Engineering degree from Cape Peninsula
+            University of Technology, I merge precision with creativity to craft
+            seamless, responsive websites that leave a lasting impression. Every
+            project is a new challenge, a fresh canvas, and an opportunity to
+            push boundaries. Let's bring bold ideas to life — one pixel at a
+            time!
+          </p>
+        </div>
+      </div>
+
+      <!-- ARROW ICON FOR NAVIGATION -->
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
     </section>
 
     <!------------------ SKILLS SECTION ------------------>
@@ -97,8 +155,8 @@
       <p class="section__text__p1">Explore My</p>
       <h2 class="title">Skills</h2>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
+        <div class="skills-containers">
+          <div class="skills-details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <!-- Article 1 -->
@@ -176,7 +234,7 @@
             </div>
           </div>
           <!-- Details Container 2 -->
-          <div class="details-container">
+          <div class="skills-details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <!-- Article 1 -->
@@ -254,12 +312,12 @@
     <!------------------ PORTFOLIO SECTION ------------------>
     <section id="portfolio">
       <p class="section__text__p1">Browse My Recent</p>
-      <h2 class="title">Portfolio</h2>
+      <h2 class="title">Projects</h2>
       <div class="portfolio-grid-container">
         <!-- First Child -->
         <div class="portfolio-details-container">
           <img
-            src="./public/image/p-1.svg"
+            src="./public/image/p1.svg"
             alt="Portfolio Project One"
             class="portfolio-img"
           />
@@ -272,7 +330,7 @@
         <!-- Second Child -->
         <div class="portfolio-details-container">
           <img
-            src="./public/image/p-1.svg"
+            src="./public/image/p1.svg"
             alt="Portfolio Project Two"
             class="portfolio-img"
           />
@@ -284,7 +342,7 @@
         </div>
         <div class="portfolio-details-container">
           <img
-            src="./public/image/p-1.svg"
+            src="./public/image/p1.svg"
             alt="Portfolio Project Three"
             class="portfolio-img"
           />
@@ -315,7 +373,7 @@
     </section>
 
     <section id="contact">
-      <p class="section__text__p1">Where To</p>
+      <p class="section__text__p1">How To</p>
       <h2 class="title">Contact Me</h2>
     </section>
 

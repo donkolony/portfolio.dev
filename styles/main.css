@@ -224,7 +224,7 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/********** PROFILE SECTION *********/
 #profile {
   display: flex;
   justify-content: center;
@@ -332,24 +332,68 @@ section {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.about-container-flex {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
+.about-img-container {
+  width: 350px;
+  height: 350px;
+  margin: auto 0;
+  /* flex: 1; */
 }
 
-.about-containers,
+.about-me {
+  border-radius: 2rem;
+}
+
 .about-details-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
 }
 
-.about-pic {
+.about-details-card-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
   border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.about-icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.about-details-card p {
+  font-size: 0.8rem;
+}
+
+.about-text-container::before {
+  content: "<p>";
+  color: #000;
+}
+
+.about-text-container::after {
+  content: "</p>";
+  color: #000;
 }
 
 .arrow {
@@ -358,7 +402,21 @@ section {
   bottom: 2.5rem;
 }
 
-.details-container {
+/********** ABOUT SECTION *********/
+
+/* SKILLS */
+#skills {
+  position: relative;
+}
+
+.skills-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -366,22 +424,6 @@ section {
   border: 0.1rem solid rgb(53, 53, 53);
   border-color: rgb(163, 163, 163);
   text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/* SKILLS */
-#skills {
-  position: relative;
 }
 
 .experience-details-container {
