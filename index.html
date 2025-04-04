@@ -13,7 +13,7 @@
     <!-- DESKTOP NAV -->
     <nav id="desktop-nav">
       <div class="logo">D.K</div>
-      <div>
+      <div class="test">
         <ul class="nav-links">
           <li><a href="./index.html#about">About</a></li>
           <li><a href="./index.html#skills">Skills</a></li>
@@ -48,7 +48,7 @@
 
     <!------------------ PROFILE SECTION ------------------>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="profile__img-container">
         <img
           src="./public/image/profile.png"
           alt="Dieudonne Kolony profile picture"
@@ -150,7 +150,7 @@
       <!-- ARROW ICON FOR NAVIGATION -->
       <img
         src="./public/icon/arrow.png"
-        alt="Arrow icon"
+        alt="Arrow down to skills section"
         class="icon arrow"
         onclick="location.href='./index.html#skills'"
       />
@@ -309,7 +309,7 @@
       </div>
       <img
         src="./public/icon/arrow.png"
-        alt="Arrow icon"
+        alt="Arrow down to project section"
         class="icon arrow"
         onclick="location.href='./index.html#portfolio'"
       />
@@ -372,7 +372,7 @@
       <!-- ARROW ICON FOR NAVIGATION -->
       <img
         src="./public/icon/arrow.png"
-        alt="Arrow icon"
+        alt="Arrow down to contact section"
         class="icon arrow"
         onclick="location.href='./index.html#contact'"
       />
@@ -384,7 +384,7 @@
       <h2 class="title">Contact Me</h2>
       <!-- Form Section -->
       <div class="form-container-flex">
-        <form action="" method="get">
+        <form onsubmit="event.preventDefault();" method="get">
           <input
             type="text"
             name="name"
@@ -464,18 +464,16 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li>
-              <a href="#about" onclick="location.href='/#about'">About</a>
+              <a href="#about" class="scroll-to-top">About</a>
             </li>
             <li>
-              <a href="#Skills" onclick="location.href='/#skills'">Skills</a>
+              <a href="#skills" class="scroll-to-top">Skills</a>
             </li>
             <li>
-              <a href="#portdolio" onclick="location.href='/#portfolio'"
-                >Portfolio</a
-              >
+              <a href="#portfolio" class="scroll-to-top">Portfolio</a>
             </li>
             <li>
-              <a href="#contact" onclick="location.href='/#contact'">Contact</a>
+              <a href="#contact" class="scroll-to-top">Contact</a>
             </li>
           </ul>
         </div>
