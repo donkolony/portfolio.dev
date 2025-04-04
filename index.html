@@ -15,10 +15,10 @@
       <div class="logo">D.K</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#skills">Skills</a></li>
+          <li><a href="./index.html#portfolio">Projects</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -32,10 +32,16 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#portfolio" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./index.html#skills" onclick="toggleMenu()">Skills</a>
+          </li>
+          <li>
+            <a href="./index.html#portfolio" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="./index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
         </div>
       </div>
     </nav>
@@ -146,7 +152,7 @@
         src="./public/icon/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#skills'"
+        onclick="location.href='./index.html#skills'"
       />
     </section>
 
@@ -305,7 +311,7 @@
         src="./public/icon/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#portfolio'"
+        onclick="location.href='./index.html#portfolio'"
       />
     </section>
 
@@ -368,13 +374,88 @@
         src="./public/icon/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./index.html#contact'"
       />
     </section>
 
+    <!------------------ CONTACT SECTION ------------------>
     <section id="contact">
       <p class="section__text__p1">How To</p>
       <h2 class="title">Contact Me</h2>
+      <!-- Form Section -->
+      <div class="form-container-flex">
+        <form action="" method="get">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            type="message"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <aside>
+          <div class="aside-profile">
+            <img
+              src="./public/image/profile.png"
+              alt="Portrait of Dieudonné Kolony, Civil Engineer"
+              class="aside-img"
+            />
+            <h2>Also in Social</h2>
+            <p>Feel free to reach me at any of social networks listed below:</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/d-kolony/">
+                <img
+                  src="./public/icon/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://wa.me/+270715907431">
+                <img
+                  src="./public/icon/whatsapp.png"
+                  alt="Whatsapp icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://github.com/donkolony">
+                <img
+                  src="./public/icon/github.png"
+                  alt="GitHub icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://www.instagram.com/ ">
+                <img
+                  src="./public/icon/instagram.png"
+                  alt="Instagram icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://x.com/?lang=en">
+                <img
+                  src="./public/icon/twitter.png"
+                  alt="Twitter icon"
+                  class="aside-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <!------------------ FOOTER SECTION ------------------>
