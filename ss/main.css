@@ -42,26 +42,26 @@ li {
   --FW-HEADINGS: 700;
 
   /* COLORS */
-  /* Base Colors */
-  --BG: #fefbf6;
-  --CARD-BG: rgba(255, 255, 255, 0.25); /* Semi-transparent glass */
-  --BORDER-COLOR: rgba(255, 165, 0, 0.3); /* Soft orange border */
-  --TEXT-HEADING: #ff8c00; /* Dark orange */
-  --TEXT-PARAGRAPH: #333333;
-  --TEXT-MUTED: #666666;
+  --BG-COLOR: #fffaf3;
+  --FONT-COLOR: #1a1a1a;
+  --FONT-MUTED: #5c5c5c;
+  --HEADING-COLOR: #2b2b2b;
+  --LINK-COLOR: #ffa500;
+  --LINK-HOVER: #e69500;
+  --BORDER-COLOR: #e8e0d1;
+  --CARD-BG: #ffffff;
+  --CARD-SHADOW: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --CARD-HOVER-SHADOW: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --CARD-HOVER-TRANSITION: all 0.3s ease;
+  --BUTTON-BG: #ffa500;
+  --BUTTON-COLOR: #ffffff;
+  --BUTTON-HOVER-BG: #e69500;
+  --ACCENT-LIGHT: #fff1da;
+  --ACCENT-DARK: #cc8400;
+  --SUCCESS: #2ecc71;
+  --ERROR: #e74c3c;
+  --INFO: #3498db;
   --INPUT-FOCUS-SHADOW: 0 0 0 3px rgba(255, 165, 0, 0.3);
-
-  /* Accent / Interactive */
-  --ACCENT: #ffa500;
-  --ACCENT-HOVER: #ff7f00;
-
-  /* Shadow / Glow */
-  --GLASS-SHADOW: 0 8px 32px rgba(0, 0, 0, 0.1);
-  --GLOW: 0 0 20px rgba(255, 165, 0, 0.4);
-  --GLOW-HOVER: 0 0 30px rgba(255, 140, 0, 0.5);
-
-  /* Blur Effects */
-  --GLASS-BLUR: blur(10px);
 
   /* PADDING */
   --PADDING-ALL-1: 1rem;
@@ -84,7 +84,7 @@ li {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--BG);
+  background-color: var(--BG-COLOR);
 }
 
 html {
@@ -92,7 +92,8 @@ html {
 }
 
 p {
-  color: var(--TEXT-PARAGRAPH);
+  /* color: rgb(85, 85, 85); */
+  color: var(--FONT-COLOR);
 }
 
 /* TRANSITION */
@@ -120,17 +121,19 @@ nav {
 }
 
 a {
+  /* color: black; */
   color: var(--LINK-COLOR);
   text-decoration: none;
   text-decoration-color: white;
-  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: var(--ACCENT-HOVER);
+  /* color: grey; */
+  color: var(--LINK-HOVER);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: var(--ACCENT-HOVER);
+  /* text-decoration-color: rgb(181, 181, 181); */
+  text-decoration-color: var(--LINK-HOVER);
 }
 
 .logo {
@@ -139,31 +142,6 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-}
-
-/* CARDS */
-.card {
-  background: var(--CARD-BG);
-  box-shadow: var(--GLASS-SHADOW), var(--GLOW);
-  border: 1px solid var(--BORDER-COLOR);
-  backdrop-filter: var(--GLASS-BLUR);
-  -webkit-backdrop-filter: var(--GLASS-BLUR);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  cursor: pointer;
-  box-shadow: var(--GLASS-SHADOW), var(--GLOW-HOVER);
-}
-
-button {
-  font-weight: 600;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 /* HAMBURGER MENU */
@@ -283,7 +261,6 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  color: var(--ACCENT);
 }
 
 .section__text__p2 {
@@ -293,7 +270,7 @@ section {
 
 .title {
   font-size: var(--FS-SECTION-TITLE);
-  color: var(--TEXT-HEADING);
+  color: var(--HEADING-COLOR);
   text-align: center;
 }
 
@@ -316,45 +293,50 @@ section {
 }
 
 /* HERO BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.btn-primary {
-  background-color: var(--ACCENT-HOVER);
-  color: #fff;
-  border: none;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: var(--GLOW);
-  backdrop-filter: var(--GLASS-BLUR);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+.btn {
+  font-weight: var(--FW-TEXT);
+  transition: all 300ms ease;
+  padding: var(--PADDING-ALL-1);
+  width: 8rem;
+  border-radius: var(--BORDER-RAD-EDGES);
 }
 
-.btn-primary:hover {
-  background-color: var(--ACCENT);
-  box-shadow: var(--GLOW-HOVER);
-  transform: translateY(-2px);
+.btn-color-1,
+.btn-color-2 {
+  border: 0.1rem solid var(--BUTTON-HOVER-BG);
 }
 
-.btn-secondary {
-  color: #000;
-  border: 1.5px solid var(--ACCENT);
-  background: transparent;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: var(--GLOW);
-  backdrop-filter: var(--GLASS-BLUR);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+.btn-color-1 {
+  background: var(--BUTTON-BG);
 }
 
-.btn-secondary:hover {
-  border: none;
-  transform: translateY(-2px);
-  background-color: var(--ACCENT);
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-2:hover {
+  background-color: var(--BUTTON-HOVER-BG);
+}
+
+.btn-color-1:hover {
+  background: var(--BUTTON-HOVER-BG);
+  border: 0.1rem solid var(--BUTTON-HOVER-BG);
+  transition: all 0.5s ease;
+}
+
+.btn-color-2:hover {
+  border: 0.1rem solid var(--BUTTON-HOVER-BG);
 }
 
 /********** ABOUT SECTION *********/
@@ -398,11 +380,19 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  padding: var(--PADDING-ALL-2);
   flex: 1;
+  background: var(--CARD-BG);
+  border-radius: var(--BORDER-RAD-EDGES);
+  border: 0.1rem solid var(--BORDER-COLOR);
+  box-shadow: var(--CARD-SHADOW);
   text-align: center;
 }
 
 .about-details-card:hover {
+  cursor: pointer;
+  box-shadow: var(--CARD-HOVER-SHADOW);
+  transition: all 0.3s ease;
 }
 
 .about-icon {
@@ -446,11 +436,19 @@ section {
 }
 
 .skills-details-container {
+  padding: var(--PADDING-ALL-2);
   flex: 1;
+  background: var(--CARD-BG);
+  border-radius: var(--BORDER-RAD-EDGES);
+  border: 0.1rem solid var(--BORDER-COLOR);
+  box-shadow: var(--CARD-SHADOW);
   text-align: center;
 }
 
 .skills-details-container:hover {
+  cursor: pointer;
+  box-shadow: var(--CARD-HOVER-SHADOW);
+  transition: var(--CARD-HOVER-TRANSITION);
 }
 
 .experience-details-container {
@@ -509,6 +507,17 @@ article p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  background: var(--CARD-BG);
+  border-radius: var(--BORDER-RAD-EDGES);
+  border: 0.1rem solid var(--BORDER-COLOR);
+  box-shadow: var(--CARD-SHADOW);
+  padding: 2rem;
+}
+
+.portfolio-details-container:hover {
+  cursor: pointer;
+  box-shadow: var(--CARD-HOVER-SHADOW);
+  transition: var(--CARD-HOVER-TRANSITION);
 }
 
 .portfolio-img {
@@ -524,38 +533,20 @@ article p {
   gap: 1rem;
 }
 
-.portfolio-btn-1 {
-  background-color: var(--ACCENT-HOVER);
-  color: #fff;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
-  box-shadow: var(--GLOW);
-  backdrop-filter: var(--GLASS-BLUR);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+.portfolio-btn {
+  font-weight: var(--FW-TEXT);
+  transition: all 300ms ease;
+  padding: 8px 16px;
+  width: 6rem;
+  border: 0.1rem solid var(--ACCENT-LIGHT);
+  border-radius: var(--BORDER-RAD-EDGES);
+  background: var(--ACCENT-LIGHT);
 }
 
-.portfolio-btn-1:hover {
-  background-color: var(--ACCENT);
-  box-shadow: var(--GLOW-HOVER);
-  transform: translateY(-2px);
-}
-
-.portfolio-btn-2 {
-  color: #000;
-  border: 1.5px solid var(--ACCENT);
-  background: transparent;
-  border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
-  box-shadow: var(--GLOW);
-  backdrop-filter: var(--GLASS-BLUR);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
-}
-
-.portfolio-btn-2:hover {
-  border: none;
-  transform: translateY(-2px);
-  background-color: var(--ACCENT);
+.portfolio-btn:hover {
+  cursor: pointer;
+  background-color: var(--BUTTON-HOVER-BG);
+  transition: all 0.5s ease;
 }
 
 /********** CONTACT SECTION *********/
@@ -604,24 +595,20 @@ form textarea {
 }
 
 .submit-btn {
-  background-color: var(--ACCENT-HOVER);
-  color: #fff;
-  border: none;
+  color: black;
+  padding: var(--PADDING-ALL-1);
+  cursor: pointer;
+  background: var(--BUTTON-BG);
   border-radius: 1rem;
-  box-shadow: var(--GLOW);
-  backdrop-filter: var(--GLASS-BLUR);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: 0.1rem solid var(--BUTTON-HOVER-BG);
   font-weight: var(--FW-HEADINGS);
   margin-top: 5px;
-  cursor: pointer;
   width: 25%;
-  padding: 0.75rem 1.5rem;
 }
 
 .submit-btn:hover {
-  background-color: var(--ACCENT);
-  box-shadow: var(--GLOW-HOVER);
-  transform: translateY(-2px);
+  background-color: var(--BUTTON-HOVER-BG);
+  transition: all 0.3s ease;
 }
 
 aside {
@@ -634,6 +621,20 @@ aside {
   border-radius: var(--BORDER-RAD-CIRCLE);
   width: 72px;
   position: relative;
+}
+
+.aside-profile {
+  padding: 1.25rem;
+  background: var(--CARD-BG);
+  border: 0.1rem solid var(--BORDER-COLOR);
+  border-radius: 1rem;
+  box-shadow: var(--CARD-SHADOW);
+}
+
+.aside-profile:hover {
+  cursor: pointer;
+  box-shadow: var(--CARD-HOVER-SHADOW);
+  transition: var(--CARD-HOVER-TRANSITION);
 }
 
 .aside-profile h2,
@@ -662,7 +663,7 @@ aside {
 /********** FOOTER SECTION *********/
 footer {
   height: 26vh;
-  margin-top: 3rem;
+  margin: 0 1rem;
 }
 
 footer p {

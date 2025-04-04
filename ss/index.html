@@ -55,21 +55,18 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello 👋, I'm</p>
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Dieudonne Kolony</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <!-- Profile Buttons -->
         <div class="btn-container">
           <button
-            class="btn btn-primary"
+            class="btn btn-color-2"
             onclick="window.open('./public/cv.pdf')"
           >
             Download CV
           </button>
-          <button
-            class="btn btn-secondary"
-            onclick="location.href ='./#contact'"
-          >
+          <button class="btn btn-color-1" onclick="location.href ='./#contact'">
             Contact Info
           </button>
         </div>
@@ -112,7 +109,7 @@
         <div class="about-details-container">
           <div class="about-details-card-container">
             <!-- First Child -->
-            <div class="about-details-card card">
+            <div class="about-details-card">
               <img
                 src="./public/icon/experience.png"
                 alt="Experience icon"
@@ -124,13 +121,13 @@
                 Frontend Development
               </p>
             </div>
-            <div class="about-details-card card">
+            <div class="about-details-card">
               <img
                 src="./public/icon/experience.png"
                 alt="Experience icon"
                 class="about-icon"
               />
-              <h3>Education</h3>
+              <h3>Experience</h3>
               <p>
                 BTech Bachelors of Technology<br />
                 NDip National Diploma
@@ -165,7 +162,7 @@
       <h2 class="title">Skills</h2>
       <div class="experience-details-container">
         <div class="skills-containers">
-          <div class="skills-details-container card">
+          <div class="skills-details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <!-- Article 1 -->
@@ -243,7 +240,7 @@
             </div>
           </div>
           <!-- Details Container 2 -->
-          <div class="skills-details-container card">
+          <div class="skills-details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <!-- Article 1 -->
@@ -324,7 +321,7 @@
       <h2 class="title">Projects</h2>
       <div class="portfolio-grid-container">
         <!-- First Child -->
-        <div class="portfolio-details-container card">
+        <div class="portfolio-details-container">
           <img
             src="./public/image/p1.svg"
             alt="Portfolio Project One"
@@ -332,12 +329,12 @@
           />
           <h2 class="portfolio-title">eCommerce</h2>
           <div class="portfolio-btn-container">
-            <button class="portfolio-btn-1">GitHub</button>
-            <button class="portfolio-btn-2">Demo</button>
+            <button class="portfolio-btn">GitHub</button>
+            <button class="portfolio-btn">Demo</button>
           </div>
         </div>
         <!-- Second Child -->
-        <div class="portfolio-details-container card">
+        <div class="portfolio-details-container">
           <img
             src="./public/image/p1.svg"
             alt="Portfolio Project Two"
@@ -345,12 +342,11 @@
           />
           <h2 class="portfolio-title">Portfolio</h2>
           <div class="portfolio-btn-container">
-            <button class="portfolio-btn-1">GitHub</button>
-            <button class="portfolio-btn-2">Demo</button>
+            <button class="portfolio-btn">GitHub</button>
+            <button class="portfolio-btn">Demo</button>
           </div>
         </div>
-        <!-- Third Child -->
-        <div class="portfolio-details-container card">
+        <div class="portfolio-details-container">
           <img
             src="./public/image/p1.svg"
             alt="Portfolio Project Three"
@@ -359,13 +355,13 @@
           <h2 class="portfolio-title">Kolony Dev</h2>
           <div class="portfolio-btn-container">
             <button
-              class="portfolio-btn-1"
+              class="portfolio-btn"
               onclick="location.href='https://github.com/donkolony/kolony.dev.git'"
             >
               GitHub
             </button>
             <button
-              class="portfolio-btn-2"
+              class="portfolio-btn"
               onclick="location.href='https://donkolony.github.io/kolony.dev/'"
             >
               Demo
@@ -388,7 +384,7 @@
       <h2 class="title">Contact Me</h2>
       <!-- Form Section -->
       <div class="form-container-flex">
-        <form onsubmit="event.preventDefault();" method="get" class="card">
+        <form onsubmit="event.preventDefault();" method="get">
           <input
             type="text"
             name="name"
@@ -412,7 +408,7 @@
           <button type="submit" class="submit-btn">Submit</button>
         </form>
         <aside>
-          <div class="aside-profile card">
+          <div class="aside-profile">
             <img
               src="./public/image/profile.png"
               alt="Portrait of Dieudonné Kolony, Civil Engineer"
