@@ -265,10 +265,11 @@ section {
 
 .profile__img-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   margin: auto 0;
   border: 2px solid var(--BORDER-COLOR);
+  border: 2px solid var(--ACCENT-HOVER);
   border-radius: var(--BORDER-RAD-CIRCLE);
 }
 
@@ -402,9 +403,6 @@ section {
   text-align: center;
 }
 
-.about-details-card:hover {
-}
-
 .about-icon {
   cursor: pointer;
   height: 2rem;
@@ -448,9 +446,6 @@ section {
 .skills-details-container {
   flex: 1;
   text-align: center;
-}
-
-.skills-details-container:hover {
 }
 
 .experience-details-container {
@@ -501,10 +496,11 @@ article p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .portfolio-details-container {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -569,7 +565,7 @@ article p {
   flex-wrap: wrap;
   gap: 3rem;
   min-height: 80%;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 form {
@@ -598,7 +594,7 @@ form textarea:focus {
 }
 
 form textarea {
-  height: 300px;
+  height: 200px;
   resize: vertical;
   font-family: inherit;
 }
@@ -625,8 +621,9 @@ form textarea {
 }
 
 aside {
-  max-width: 400px;
+  max-width: 350px;
   height: max-content;
+  flex: 1;
 }
 
 .aside-img {
