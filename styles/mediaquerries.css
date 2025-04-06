@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
   }
 
   .about-containers {
@@ -52,19 +52,31 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact {
-    height: 40vh;
+  .section__text__p1,
+  .profile-greet {
+    font-size: 0.8rem;
   }
 
-  #profile {
-    height: 83vh;
-    margin-bottom: 2rem;
-    gap: 3rem;
+  .section-title {
+    font-size: 2rem;
   }
 
-  .profile__img-container {
-    height: 200px;
-    width: 200px;
+  /* ABOUT SECTION */
+  .about-icon {
+    cursor: pointer;
+    height: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+  }
+
+  .about-details-card p {
+    font-size: 0.6rem;
+  }
+
+  .about-text-container {
+    font-size: 0.85rem;
   }
 
   .about-img-container {
@@ -79,6 +91,35 @@
     gap: 1rem;
   }
 
+  /* SKILLS SECTION */
+  .experience-sub-title {
+    font-size: 1.15rem;
+  }
+
+  article p {
+    font-size: 0.6rem;
+  }
+
+  /* PORTFOLIO SECTION */
+  .portfolio-title {
+    font-size: 1.3rem;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 2rem;
+    gap: 3rem;
+  }
+
+  .profile__img-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  #contact {
+    height: 40vh;
+  }
+
   .skills-containers {
     flex-direction: column;
   }
@@ -88,7 +129,6 @@
   }
 
   footer {
-    background-color: green;
     height: 32vh;
   }
 
@@ -103,10 +143,6 @@
 
   .nav-links li a {
     font-size: 1rem;
-  }
-
-  .experience-sub-title {
-    font-size: 1.25rem;
   }
 
   .logo {

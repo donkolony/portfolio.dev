@@ -57,7 +57,7 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello 👋, I'm</p>
+        <p class="profile-greet">Hello 👋, I'm</p>
         <h1 class="title">Dieudonne Kolony</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <!-- Profile Buttons -->
@@ -128,7 +128,7 @@
             </div>
             <div class="about-details-card card">
               <img
-                src="./public/icon/experience.png"
+                src="./public/icon/education.png"
                 alt="Experience icon"
                 class="about-icon"
               />
@@ -411,7 +411,9 @@
             placeholder="Message"
             required
           ></textarea>
-          <button type="submit" class="submit-btn">Submit</button>
+          <div class="btn-container">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
         </form>
         <aside>
           <div class="aside-profile card">
@@ -423,6 +425,13 @@
             <h2>Also in Social</h2>
             <p>Feel free to reach me at any of social networks listed below:</p>
             <div class="social-icons">
+              <a href="mailto:Dieudonne.Kolony@outlook.com">
+                <img
+                  src="./public/icon/email2.png"
+                  alt="LinkedIn icon"
+                  class="aside-icon"
+                />
+              </a>
               <a href="https://www.linkedin.com/in/d-kolony/">
                 <img
                   src="./public/icon/linkedin.png"
@@ -444,20 +453,7 @@
                   class="aside-icon"
                 />
               </a>
-              <a href="https://www.instagram.com/ ">
-                <img
-                  src="./public/icon/instagram.png"
-                  alt="Instagram icon"
-                  class="aside-icon"
-                />
-              </a>
-              <a href="https://x.com/?lang=en">
-                <img
-                  src="./public/icon/twitter.png"
-                  alt="Twitter icon"
-                  class="aside-icon"
-                />
-              </a>
+              <!-- Removed IG & Twitter tags -->
             </div>
           </div>
         </aside>
@@ -470,15 +466,13 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li>
-              <a href="./index.html#about" class="scroll-to-top">About</a>
+              <a href="./index.html#about">About</a>
             </li>
             <li>
-              <a href="./index.html#skills" class="scroll-to-top">Skills</a>
+              <a href="./index.html#skills">Skills</a>
             </li>
             <li>
-              <a href="./index.html#portfolio" class="scroll-to-top"
-                >Portfolio</a
-              >
+              <a href="./index.html#portfolio">Portfolio</a>
             </li>
             <li>
               <!-- For the contact I removed the class name because it was scrolling to the hero section and not the contact  -->

@@ -165,6 +165,7 @@ a:hover {
 
 button {
   font-weight: 600;
+  /* font-size: 0.9rem; */
 }
 
 button:hover {
@@ -264,6 +265,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   height: 80vh;
 }
@@ -272,7 +274,6 @@ section {
   display: flex;
   height: 350px;
   width: 350px;
-  margin: auto 0;
   border: 2px solid var(--BORDER-COLOR);
   border: 2px solid var(--ACCENT-HOVER);
   border-radius: var(--BORDER-RAD-CIRCLE);
@@ -290,6 +291,7 @@ section {
 .section__text__p1 {
   text-align: center;
   color: var(--ACCENT);
+  margin-top: 2rem;
 }
 
 .section__text__p2 {
@@ -378,14 +380,12 @@ section {
   display: flex;
   gap: 4rem;
   height: 80%;
-
-  align-items: center;
 }
 
 .about-img-container {
   width: 350px;
   height: 350px;
-  /* margin: auto 0; */
+  margin: auto 0;
 }
 
 .about-me {
@@ -499,6 +499,7 @@ article h3 {
 article p {
   font-size: 0.7rem;
   color: var(--FONT-MUTED);
+  margin-top: 0.5rem;
 }
 
 /********** PORTFOLIO SECTION *********/
@@ -614,6 +615,12 @@ form textarea {
   font-family: inherit;
 }
 
+form .btn-container {
+  justify-content: flex-start;
+  align-items: centers;
+  width: 25%;
+}
+
 .submit-btn {
   background-color: var(--ACCENT-HOVER);
   color: #fff;
@@ -625,7 +632,6 @@ form textarea {
   font-weight: var(--FW-HEADINGS);
   margin-top: 5px;
   cursor: pointer;
-  width: 25%;
   padding: 0.75rem 1.5rem;
   text-align: center;
 }
