@@ -37,9 +37,10 @@
   }
 
   .about-img-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto 2rem;
+    /* margin: auto; */
   }
 
   .about-containers {
