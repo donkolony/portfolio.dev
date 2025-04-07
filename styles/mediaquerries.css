@@ -102,9 +102,9 @@
 
   /********** PROFILE SECTION *********/
   #profile {
-    height: 60vh;
-    margin: 0 0 2rem;
-    gap: 2rem;
+    height: 40vh;
+    margin: 0 0 2.5rem;
+    gap: 2.5rem;
   }
 
   .profile__img-container {
