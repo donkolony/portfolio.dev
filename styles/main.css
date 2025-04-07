@@ -526,7 +526,9 @@ article p {
 }
 
 .portfolio-title {
-  margin: 1rem;
+  font-size: 1.3rem;
+
+  padding: 1rem 0;
 }
 
 .portfolio-btn-container {
@@ -539,7 +541,7 @@ article p {
   color: #fff;
   border: none;
   border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   box-shadow: var(--GLOW);
   backdrop-filter: var(--GLASS-BLUR);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
@@ -556,7 +558,7 @@ article p {
   border: 1.5px solid var(--ACCENT);
   background: transparent;
   border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   box-shadow: var(--GLOW);
   backdrop-filter: var(--GLASS-BLUR);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
