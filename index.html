@@ -390,7 +390,12 @@
       <h2 class="section-title">Contact Me</h2>
       <!-- Form Section -->
       <div class="form-container-flex">
-        <form onsubmit="event.preventDefault();" method="get" class="card">
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xoverybp"
+          method="POST"
+          class="card"
+        >
           <input
             type="text"
             name="name"
@@ -407,10 +412,12 @@
           />
           <textarea
             type="message"
+            name="message"
             id="message"
             placeholder="Message"
             required
           ></textarea>
+          <div id="form-message" class="form-message"></div>
           <div class="btn-container">
             <button type="submit" class="submit-btn">Submit</button>
           </div>
