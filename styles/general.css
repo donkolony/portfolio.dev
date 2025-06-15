@@ -1,0 +1,164 @@
+/* || RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.15;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+form input,
+form textarea {
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--BG);
+}
+
+p {
+  color: var(--TEXT-PARAGRAPH);
+}
+
+/* TRANSITION */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav,
+.nav-list {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-list {
+  gap: 2rem;
+  list-style: none;
+  font-size: var(--FS-TEXT);
+}
+
+.nav-link:link {
+  position: relative;
+}
+
+.nav-link:link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff922b;
+  transition: all 0.3s;
+}
+
+.nav-link:link:hover::after,
+.nav-link:link:active::after {
+  width: 100%;
+}
+
+/* NEED TO UPDATE NAV AND FOOTER LINK */
+/* a {
+  color: var(--LINK-COLOR);
+  text-decoration: none;
+  text-decoration-color: white;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--ACCENT-HOVER);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: var(--ACCENT-HOVER);
+} */
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* CARDS */
+.card {
+  background: var(--CARD-BG);
+  box-shadow: var(--GLASS-SHADOW), var(--GLOW);
+  border: 1px solid var(--BORDER-COLOR);
+  backdrop-filter: var(--GLASS-BLUR);
+  -webkit-backdrop-filter: var(--GLASS-BLUR);
+  border-radius: 9px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--GLASS-SHADOW), var(--GLOW-HOVER);
+}
+
+button {
+  font-weight: 600;
+  /* font-size: 0.9rem; */
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: var(--FS-SECTION-TITLE);
+  text-align: center;
+  color: #333;
+}
+
+.section-title {
+  font-size: var(--FS-SECTION-TITLE);
+  color: var(--TEXT-HEADING);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-text-p1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #ffa855;
+}
