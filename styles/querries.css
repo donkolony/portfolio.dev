@@ -52,20 +52,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .form-container-flex {
-    flex-direction: column;
-  }
-
-  form {
-    max-width: 100%;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .section__text__p1,
   .profile-greet {
@@ -184,6 +170,16 @@
   }
 
   aside {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form-container-flex {
+    flex-direction: column;
+  }
+
+  form {
     max-width: 100%;
   }
 }

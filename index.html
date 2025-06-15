@@ -6,32 +6,19 @@
     <title>Kolony Portfolio</title>
     <link rel="stylesheet" href="" />
     <link rel="icon" href="./public/icon/logo.jpg" />
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/querries.css" />
-    <!-- Ionicons CDN -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </head>
   <body>
     <!-- DESKTOP NAV -->
     <nav id="desktop-nav">
       <div class="logo">D.K</div>
       <div class="test">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="./index.html#about">About</a></li>
-          <li><a class="nav-link" href="./index.html#skills">Skills</a></li>
-          <li>
-            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
-          </li>
-          <li><a class="nav-link" href="./index.html#contact">Contact</a></li>
+        <ul class="nav-links">
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#skills">Skills</a></li>
+          <li><a href="./index.html#portfolio">Portfolio</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -63,31 +50,37 @@
 
     <!------------------ PROFILE SECTION ------------------>
     <section id="profile">
-      <div class="container">
-        <div class="profile-img">
-          <img
-            src="./public/image/profile.png"
-            alt="Dieudonne Kolony profile picture"
-          />
-        </div>
-        <!-- NEW PROFILE TEXT BOX  -->
-        <div class="profile-text-box">
-          <p class="greet">HELLO 👋, I'M</p>
-          <h1 class="title">Dieudonne Kolony</h1>
-          <p class="section-text-p2">Frontend Developer</p>
-          <div class="btn">
-            <a href="./public/cv.pdf" class="btn btn-full margin-right-sm"
-              >Download CV</a
-            >
-            <a href="#contact" class="btn btn-outline">Contact Info</a>
-          </div>
+      <div class="profile__img-container">
+        <img
+          src="./public/image/profile.png"
+          alt="Dieudonne Kolony profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="profile-greet">Hello 👋, I'm</p>
+        <h1 class="title">Dieudonne Kolony</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <!-- Profile Buttons -->
+        <div class="btn-container">
+          <button
+            class="btn btn-primary"
+            onclick="window.open('./public/cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-secondary"
+            onclick="location.href ='./#contact'"
+          >
+            Contact Info
+          </button>
         </div>
       </div>
     </section>
 
     <!------------------ ABOUT SECTION ------------------>
     <section id="about">
-      <p class="section-text-p1">Know More</p>
+      <p class="section__text__p1">Know More</p>
       <h2 class="section-title">About Me</h2>
       <div class="about-container-flex">
         <div class="about-img-container">
@@ -139,17 +132,17 @@
       </div>
 
       <!-- ARROW ICON FOR NAVIGATION -->
-      <a class="arrow-icon arrow" onclick="location.href='./index.html#skills'">
-        <ion-icon
-          name="caret-down-circle-outline"
-          class="profile-icon"
-        ></ion-icon
-      ></a>
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow down to skills section"
+        class="icon arrow"
+        onclick="location.href='./index.html#skills'"
+      />
     </section>
 
     <!------------------ SKILLS SECTION ------------------>
     <section id="skills">
-      <p class="section-text-p1">Explore My</p>
+      <p class="section__text__p1">Explore My</p>
       <h2 class="section-title">Skills</h2>
       <div class="experience-details-container">
         <div class="skills-containers">
@@ -298,20 +291,17 @@
           </div>
         </div>
       </div>
-      <a
-        class="arrow-icon arrow"
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow down to project section"
+        class="icon arrow"
         onclick="location.href='./index.html#portfolio'"
-      >
-        <ion-icon
-          name="caret-down-circle-outline"
-          class="profile-icon"
-        ></ion-icon
-      ></a>
+      />
     </section>
 
     <!------------------ PORTFOLIO SECTION ------------------>
     <section id="portfolio">
-      <p class="section-text-p1">Browse My</p>
+      <p class="section__text__p1">Browse My</p>
       <h2 class="section-title">Portfolio</h2>
       <div class="portfolio-grid-container">
         <!-- First Child -->
@@ -322,43 +312,17 @@
             class="portfolio-img"
           />
           <h2 class="portfolio-title">OCA Website</h2>
-
           <div class="portfolio-btn-container">
-            <button class="portfolio-btn-2">GitHub</button>
+            <button class="portfolio-btn-1">GitHub</button>
             <button
-              class="portfolio-btn-1"
+              class="portfolio-btn-2"
               onclick="location.href='https://ouicestnous.com/'"
             >
               Demo
             </button>
           </div>
         </div>
-
         <!-- Second Child -->
-        <div class="portfolio-details-container card">
-          <img
-            src="./public/image/p1.svg"
-            alt="Portfolio Project Three"
-            class="portfolio-img"
-          />
-          <h2 class="portfolio-title">Omnifood</h2>
-          <div class="portfolio-btn-container">
-            <button
-              class="portfolio-btn-2"
-              onclick="location.href='https://github.com/donkolony/omnifood'"
-            >
-              GitHub
-            </button>
-            <button
-              class="portfolio-btn-1"
-              onclick="location.href='https://donkolony.github.io/omnifood/'"
-            >
-              Demo
-            </button>
-          </div>
-        </div>
-
-        <!-- Third Child -->
         <div class="portfolio-details-container card">
           <img
             src="./public/image/p1.svg"
@@ -367,10 +331,33 @@
           />
           <h2 class="portfolio-title">Daniels Portfolio</h2>
           <div class="portfolio-btn-container">
-            <button class="portfolio-btn-2">GitHub</button>
+            <button class="portfolio-btn-1">GitHub</button>
+            <button
+              class="portfolio-btn-2"
+              onclick="location.href='https://chimene.dev/'"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+        <!-- Third Child -->
+        <div class="portfolio-details-container card">
+          <img
+            src="./public/image/p1.svg"
+            alt="Portfolio Project Three"
+            class="portfolio-img"
+          />
+          <h2 class="portfolio-title">Kolony Dev</h2>
+          <div class="portfolio-btn-container">
             <button
               class="portfolio-btn-1"
-              onclick="location.href='https://chimene.dev/'"
+              onclick="location.href='https://github.com/donkolony/kolony.dev.git'"
+            >
+              GitHub
+            </button>
+            <button
+              class="portfolio-btn-2"
+              onclick="location.href='https://donkolony.github.io/kolony.dev/'"
             >
               Demo
             </button>
@@ -378,20 +365,17 @@
         </div>
       </div>
       <!-- ARROW ICON FOR NAVIGATION -->
-      <a
-        class="arrow-icon arrow"
+      <img
+        src="./public/icon/arrow.png"
+        alt="Arrow down to contact section"
+        class="icon arrow"
         onclick="location.href='./index.html#contact'"
-      >
-        <ion-icon
-          name="caret-down-circle-outline"
-          class="profile-icon"
-        ></ion-icon
-      ></a>
+      />
     </section>
 
     <!------------------ CONTACT SECTION ------------------>
     <section id="contact">
-      <p class="section-text-p1">How To</p>
+      <p class="section__text__p1">How To</p>
       <h2 class="section-title">Contact Me</h2>
       <!-- Form Section -->
       <div class="form-container-flex">
@@ -424,8 +408,7 @@
           ></textarea>
           <div id="form-message" class="form-message"></div>
           <div class="btn-container">
-            <!-- <button type="submit" class="submit-btn">Submit</button> -->
-            <button type="submit" class="form-btn">Submit</button>
+            <button type="submit" class="submit-btn">Submit</button>
           </div>
         </form>
         <aside>
@@ -439,37 +422,44 @@
             <p>
               Feel free to reach me on any of the social networks listed below:
             </p>
-            <!-- UPDATE -->
-            <ul class="contact-social-links">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/d-kolony/"
-                  class="profile-links"
-                  ><ion-icon
-                    name="logo-linkedin"
-                    class="contact-icon"
-                  ></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a href="https://wa.me/+270715907431" class="profile-links"
-                  ><ion-icon
-                    name="logo-whatsapp"
-                    class="contact-icon"
-                  ></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/donkolony" class="profile-links"
-                  ><ion-icon name="logo-github" class="contact-icon"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="profile-links"
-                  ><ion-icon name="logo-twitter" class="contact-icon"></ion-icon
-                ></a>
-              </li>
-            </ul>
+            <div class="social-icons">
+              <a href="mailto:Dieudonne.Kolony@outlook.com">
+                <img
+                  src="./public/icon/email2.png"
+                  alt="LinkedIn icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/d-kolony/">
+                <img
+                  src="./public/icon/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://wa.me/+270715907431">
+                <img
+                  src="./public/icon/whatsapp.png"
+                  alt="Whatsapp icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://github.com/donkolony">
+                <img
+                  src="./public/icon/github.png"
+                  alt="GitHub icon"
+                  class="aside-icon"
+                />
+              </a>
+              <a href="https://twitter.com">
+                <img
+                  src="./public/icon/twitter.png"
+                  alt="Twitter icon"
+                  class="aside-icon"
+                />
+              </a>
+              <!-- Removed IG & Twitter tags -->
+            </div>
           </div>
         </aside>
       </div>
@@ -478,20 +468,20 @@
     <!------------------ FOOTER SECTION ------------------>
     <footer>
       <nav>
-        <div class="nav-list-container">
-          <ul class="nav-list">
+        <div class="nav-links-container">
+          <ul class="nav-links">
             <li>
-              <a class="nav-link" href="./index.html#about">About</a>
+              <a href="./index.html#about">About</a>
             </li>
             <li>
-              <a class="nav-link" href="./index.html#skills">Skills</a>
+              <a href="./index.html#skills">Skills</a>
             </li>
             <li>
-              <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+              <a href="./index.html#portfolio">Portfolio</a>
             </li>
             <li>
               <!-- For the contact I removed the class name because it was scrolling to the hero section and not the contact  -->
-              <a class="nav-link" href="./index.html#contact">Contact</a>
+              <a href="./index.html#contact">Contact</a>
               <!-- <a
                 href="./index.html#contact"
                 onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
