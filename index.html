@@ -14,11 +14,13 @@
     <nav id="desktop-nav">
       <div class="logo">D.K</div>
       <div class="test">
-        <ul class="nav-links">
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#skills">Skills</a></li>
-          <li><a href="./index.html#portfolio">Portfolio</a></li>
-          <li><a href="./index.html#contact">Contact</a></li>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="./index.html#about">About</a></li>
+          <li><a class="nav-link" href="./index.html#skills">Skills</a></li>
+          <li>
+            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+          </li>
+          <li><a class="nav-link" href="./index.html#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -31,18 +33,35 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+        <div class="menu-list">
           <li>
-            <a href="./index.html#skills" onclick="toggleMenu()">Skills</a>
+            <a class="nav-link" href="./index.html#about" onclick="toggleMenu()"
+              >About</a
+            >
           </li>
           <li>
-            <a href="./index.html#portfolio" onclick="toggleMenu()"
+            <a
+              class="nav-link"
+              href="./index.html#skills"
+              onclick="toggleMenu()"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="./index.html#portfolio"
+              onclick="toggleMenu()"
               >Portfolio</a
             >
           </li>
           <li>
-            <a href="./index.html#contact" onclick="toggleMenu()">Contact</a>
+            <a
+              class="nav-link"
+              href="./index.html#contact"
+              onclick="toggleMenu()"
+              >Contact</a
+            >
           </li>
         </div>
       </div>
@@ -132,12 +151,18 @@
       </div>
 
       <!-- ARROW ICON FOR NAVIGATION -->
-      <img
+      <a href="#skills">
+        <ion-icon
+          name="arrow-down-circle-outline"
+          class="icon arrow"
+        ></ion-icon>
+      </a>
+      <!-- <img
         src="./public/icon/arrow.png"
         alt="Arrow down to skills section"
         class="icon arrow"
         onclick="location.href='./index.html#skills'"
-      />
+      /> -->
     </section>
 
     <!------------------ SKILLS SECTION ------------------>
@@ -291,12 +316,19 @@
           </div>
         </div>
       </div>
-      <img
+
+      <a href="#portfolio">
+        <ion-icon
+          name="arrow-down-circle-outline"
+          class="icon arrow"
+        ></ion-icon>
+      </a>
+      <!-- <img
         src="./public/icon/arrow.png"
         alt="Arrow down to project section"
         class="icon arrow"
         onclick="location.href='./index.html#portfolio'"
-      />
+      /> -->
     </section>
 
     <!------------------ PORTFOLIO SECTION ------------------>
@@ -307,7 +339,7 @@
         <!-- First Child -->
         <div class="portfolio-details-container card">
           <img
-            src="./public/image/p1.svg"
+            src="./public/image/ecom.svg"
             alt="Portfolio Project One"
             class="portfolio-img"
           />
@@ -325,13 +357,42 @@
         <!-- Second Child -->
         <div class="portfolio-details-container card">
           <img
-            src="./public/image/p1.svg"
-            alt="Portfolio Project Two"
+            src="./public/image/ecom.svg"
+            alt="Portfolio Project One"
             class="portfolio-img"
           />
-          <h2 class="portfolio-title">Daniels Portfolio</h2>
+          <h2 class="portfolio-title">Ominifood</h2>
           <div class="portfolio-btn-container">
-            <button class="portfolio-btn-1">GitHub</button>
+            <button
+              class="portfolio-btn-1"
+              onclick="location.href='https://github.com/donkolony/omnifood'"
+            >
+              GitHub
+            </button>
+            <button
+              class="portfolio-btn-2"
+              onclick="location.href='https://donkolony.github.io/omnifood/'"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Third Child -->
+        <div class="portfolio-details-container card">
+          <img
+            src="./public/image/ecom.svg"
+            alt="Portfolio Project One"
+            class="portfolio-img"
+          />
+          <h2 class="portfolio-title">Daniel's Portfolio</h2>
+          <div class="portfolio-btn-container">
+            <button
+              class="portfolio-btn-1"
+              onclick="location.href='https://github.com/ChimeneD/portfolio'"
+            >
+              GitHub
+            </button>
             <button
               class="portfolio-btn-2"
               onclick="location.href='https://chimene.dev/'"
@@ -340,37 +401,21 @@
             </button>
           </div>
         </div>
-        <!-- Third Child -->
-        <div class="portfolio-details-container card">
-          <img
-            src="./public/image/p1.svg"
-            alt="Portfolio Project Three"
-            class="portfolio-img"
-          />
-          <h2 class="portfolio-title">Kolony Dev</h2>
-          <div class="portfolio-btn-container">
-            <button
-              class="portfolio-btn-1"
-              onclick="location.href='https://github.com/donkolony/kolony.dev.git'"
-            >
-              GitHub
-            </button>
-            <button
-              class="portfolio-btn-2"
-              onclick="location.href='https://donkolony.github.io/kolony.dev/'"
-            >
-              Demo
-            </button>
-          </div>
-        </div>
       </div>
       <!-- ARROW ICON FOR NAVIGATION -->
-      <img
+      <a href="#contact">
+        <ion-icon
+          name="arrow-down-circle-outline"
+          class="icon arrow"
+        ></ion-icon>
+      </a>
+
+      <!-- <img
         src="./public/icon/arrow.png"
         alt="Arrow down to contact section"
         class="icon arrow"
         onclick="location.href='./index.html#contact'"
-      />
+      /> -->
     </section>
 
     <!------------------ CONTACT SECTION ------------------>
@@ -423,10 +468,10 @@
               Feel free to reach me on any of the social networks listed below:
             </p>
             <div class="social-icons">
-              <a href="mailto:Dieudonne.Kolony@outlook.com">
+              <a href="https://github.com/donkolony">
                 <img
-                  src="./public/icon/email2.png"
-                  alt="LinkedIn icon"
+                  src="./public/icon/github.png"
+                  alt="GitHub icon"
                   class="aside-icon"
                 />
               </a>
@@ -444,13 +489,7 @@
                   class="aside-icon"
                 />
               </a>
-              <a href="https://github.com/donkolony">
-                <img
-                  src="./public/icon/github.png"
-                  alt="GitHub icon"
-                  class="aside-icon"
-                />
-              </a>
+
               <a href="https://twitter.com">
                 <img
                   src="./public/icon/twitter.png"
@@ -469,19 +508,19 @@
     <footer>
       <nav>
         <div class="nav-links-container">
-          <ul class="nav-links">
+          <ul class="nav-list">
             <li>
-              <a href="./index.html#about">About</a>
+              <a class="nav-link" href="./index.html#about">About</a>
             </li>
             <li>
-              <a href="./index.html#skills">Skills</a>
+              <a class="nav-link" href="./index.html#skills">Skills</a>
             </li>
             <li>
-              <a href="./index.html#portfolio">Portfolio</a>
+              <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
             </li>
             <li>
               <!-- For the contact I removed the class name because it was scrolling to the hero section and not the contact  -->
-              <a href="./index.html#contact">Contact</a>
+              <a class="nav-link" href="./index.html#contact">Contact</a>
               <!-- <a
                 href="./index.html#contact"
                 onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
@@ -496,6 +535,18 @@
         Kolony
       </p>
     </footer>
+
+    <!-- Script for icons from IonIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom Script -->
     <script src="./index.js"></script>
   </body>
 </html>
