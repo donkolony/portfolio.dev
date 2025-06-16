@@ -129,21 +129,6 @@ nav {
   font-size: var(--FS-TEXT);
 }
 
-/* .navbar__links::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0;
-  bottom: 0;
-  left: 0;
-  background-color: red;
-  transition: all 0.3s ease;
-}
-
-.navbar__links:hover::after,
-.navbar__links:focus::after {
-  width: 70%;} */
-
 .nav-link:link,
 .nav-link:visited {
   color: #333;
