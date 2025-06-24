@@ -422,17 +422,17 @@ section {
   font-size: 14px;
 }
 
-.about-text-container::before {
+/* .about-text-container::before {
   content: "<p>";
 }
 
 .about-text-container::after {
   content: "</p>";
-}
+} */
 
 .about-text-container::before,
 .about-text-container::after {
-  color: #ffb36b;
+  color: rgba(255, 179, 107, 0.4);
   font-weight: 600;
 }
 
